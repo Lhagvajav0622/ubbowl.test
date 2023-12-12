@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UB BOWLING</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="styles.css">
+        <style type="text/css">
+          .scrollspy-example {
+            position: relative;
+            height: 200px;
+            margin-top: .5rem;
+            overflow: auto;
+          }
+          </style>
+</head>
+
+<body >
+    <div class="container d-none d-xl-block"  >
+    
+<div class="card">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" ><img src="/UBBOWLING/logo.jpg" style="height: 5vh;" alt=""></a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="bowling-tab" data-bs-toggle="tab" href="#bowling" role="tab" aria-controls="bowling" aria-selected="false" style="font-family:Arial, Helvetica, sans-serif; font-size: 120%; color: black;">Bowling</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " id="other-tab" data-bs-toggle="tab" href="#other" role="tab" aria-controls="other"  aria-selected="false" style="font-family:Arial, Helvetica, sans-serif; font-size: 120%; color: black;">Бусад Үйлчилгээ</a>
+        </li>
+       
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" style="font-family:Arial, Helvetica, sans-serif; font-size: 120%; color: black;">Захиалга өгөх</a>
+      </li>
+      </ul>
+    </div>
+    
+    
+    
+    
+    <div class="card-body container" >
+      <div class="tab-content" id="myTabContent">
+        
+        
+        
+        
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+         
+         
+         
+          <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item">
+                <img src="/UBBOWLING/backgroundbowling.jpg" class="d-block w-100 c-img" alt="Slide 1">
+                <div class="carousel-caption top-1 mt-4">
+                  <button class="btn btn-primary px-4 py-2 fs-5 mt-5" id="booking-button">Захиалга өгөх</button>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="/UBBOWLING/bowling.jpg" class="d-block w-100 c-img" alt="Slide 2">
+                <div class="carousel-caption top-1 mt-4">
+                  <button  id="booking" class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                    data-bs-target="#booking-modal">Захиалга өгөх</button>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="/UBBOWLING/bowlinglounge1.jpg" class="d-block w-100 c-img" alt="Slide 3">
+                <div class="carousel-caption top-1 mt-4">
+                  
+                  <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                    data-bs-target="#booking-modal" id="booking-but">Захиалга өгөх</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+       
+        
+
+
+
+          <div class="d-flex" style="height: 30%;">
+          <div class="card" style="width: 50%;">
+            <div class="card-body">
+              <h5 class="card-title">GIFT CARD - Эрхийн бичиг 🎊</h5>
+              <p class="card-text">Төрсөн өдөр болон хамт олны тэмцээн уралдааны шагнал зэрэгт тохирох бэлгийн карт гарч байгаа шүү.
+
+               Facebook чатаар холбогдоод ямар ч үнийн дүнгээр авах боломжтой.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <img src="/UBBOWLING/giftcard.jpg" class="card-img-bottom" alt="card-img-bottom">
+          </div>
+          
+          
+          
+          <div class="card" style="width: 50%;">
+            <div class="card-body">
+              <div data-bs-spy="scroll"  data-bs-offset="0" tabindex="0" class="scrollspy-example">
+                <h4 >Боулингийн гутал</h4>
+                <p>
+
+                  Боулинг тоглоход заавал зориулалтын гутал өмсөх шаардлагатай байдаг. Энэ таны болоод хамт тоглож буй хүмүүсийн аюулгүй байдалтай шууд хамааралтай. <br>
+                  
+                  Боулингийн гутал нь шидэлтийн свинг, техникт тохирсон хийцлэлтэй байдаг. Гутлын ул нь урд хэсэгтээ гулгах зориулалттай гөлгөр арьсаар хийгдсэн байдаг бол өсгий хэсэг нь хурдыг бууруулах зориулалттай резин байдаг. Энэ нь тоглогчийн аюулгүй байдал цаашлаад талбайн шалыг хамагаалахад ч тустай. Бидний өмсдөг энгийн гутал нь зууралт ихтэй тул огцом зогсож энерцээ дийлэхгүй унах, гэмтэх аюултай юм. <br>
+                  
+                  Мэргэжлийн тамирчид гарын байрлал, свингний хурд, өөрийн техникт тохируулан янз бүрийн ултай гутлаас сонголт хийж авдаг. <br>
+                  
+                  Анхаарах: <br>
+                  
+                  1. Боулингийг заавал зориулалтын гуталтай тоглох <br>
+                  2. Шидэлт хийх үед замын тосолгоотой хэсэг рүү хэтэрч гишгэсэн эсвэл шингэн зүйлс дээр гишгэсэн бол заавал цэвэрлэж байж талбай руу дахин гарах. <br>
+                  3. Гадагш гарахдаа гутлаа солих эсвэл улавч өмсөх шаардлагатай. <br>
+                  
+                  Манайх гутлын түрээс тоглолтын үнэд багтсан байдаг ба шинэ оймсоор үйлчилдэг шүү.</p>
+                <h4 id="mdo"></h4>
+                <p></p>
+                <h4 id="one"></h4>
+                <p></p>
+                <h4 id="two"></h4>
+                <p></p>
+                <h4 id="three"></h4>
+                <p></p>
+              </div>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <img src="/UBBOWLING/shoes.jpg" class="card-img-bottom" alt="card-img-bottom">
+          </div>
+          
+          
+        </div>
+
+
+        <div class="container" style="display: flex;"><img src="/UBBOWLING/bowl.png" alt="bowling img" style="width: 100%;"></div>
+
+
+
+
+
+
+
+
+
+
+        
+        <div class="d-flex" style="height: 30%;">
+          
+
+
+
+
+
+
+          <div class="card" style="width: 50%;">
+            <div class="card-body">
+              <div data-bs-spy="scroll"  data-bs-offset="0" tabindex="0" class="scrollspy-example">
+                <h4 >Бөмбөгөө хэрхэн сонгох вэ? 🤔</h4>
+                <p>
+
+                  Өөрт тохирсон бөмбөгийг сонгох нь биед эвтэйхэн байхаас гадна хурд, хүч болон гүйцэтгэлийн хяналтыг даруй нэмэгдүүлдэг. Буруу бөмбөг сонгосноор гар ядрах, шөрмөс татах, булчин зангирах цаашлаад нуруунд ч ачаалал өгөх эрсдэлтэй байдаг. Тиймээс хэрхэн өөрт тохирох бөмбөгийг сонгох зөвлөмжийг хүргэж байна.
+<br>
+                  1. Жин чухал уу? 🏋️<br>
+                  
+                  Боулингийн бөмбөг нь жингээсээ хамааран дугаартай байдаг ба уг дугаар тухайн бөмбөгийн жинг "паунд" нэгжээр илэрхийлсэн байдаг. Боулингийн төвүүд ихэвчлэн 6 (2.7кг)-16 (7.3кг) паундын сонирхогчийн бөмбөгөөр үйлчилдэг ба бөмбөгний нүх нь хүн болгоны гарт тохирохоор том өрөмдсөн байдаг. Монголчуудын хувьд насанд хүрсэн эмэгтэйчүүд ихэвчлэн 7-10, эрэгтэйчүүд 10-13 паундын бөмбөгөөр шиддэг.
+                  <br>
+                  6 lb - 2.72 kg<br>
+                  7 lb - 3.17 kg<br>
+                  8 lb - 3.62 kg<br>
+                  9 lb - 4.08 kg<br>
+                  10 lb - 4.5 kg<br>
+                  11 lb - 4.98 kg<br>
+                  12 lb - 5.44 kg<br>
+                  13 lb - 5.89 kg<br>
+                  14 lb - 6.35 kg<br>
+                  15 lb - 6.8 kg<br>
+                  
+                  Стандартаар бол өөрийн биеийн жингийн 10%-тай тэнцэх бөмбөгөөр тоглохыг санал болгодог. Хэрвээ та бэртэл гэмтэлтэй эсвэл үнэхээр дийлэхгүй хүнд санагдаж байвал заавал дээрх дүрмийг баримтлах шаардлагагүй. Гол нь таны биед эвтэйхэн бөгөөд хяналттай байх нь чухал.
+                  <br>
+                  Хөнгөн бөмбөгөөр шидэх нь хурдтай, хүчтэй боловч хяналт муудах, биеийн тэнцвэр алдах зэрэг эрсдлүүдтэй.
+                  Хүнд бөмбөгөөр хүчтэй шидэх нь мэдээж олон гахай унагаах магадлал өндөр боловч өөрт тохирсон жинтэй бөмбөгөөр ядрахгүй, ачаалал багатай, тогтмол жигд гүйцэтгэлтэй шидэх нь таны оноог нэмэгдүүлэхэд тустай.
+                  <br>
+                  2. Нүхний хэмжээ 🌚<br>
+                  
+                  Стандарт боулингийн бөмбөг эрхий, дунд, ядам хуруунд зориулсан 3 нүхтэй байдаг. Мэргэжлийн тамирчид өөрсдийн гарт тохируулан бөмбөгөө нүхэлж авдаг бол сонирхогчийн буюу заалны бөмбөг нь ямар ч хүн тоглоход тохиромжтой нүхтэй байдаг.
+                  <br>
+                  Заалны бөмбөгийг сонгохдоо юуны түрүүнд бөмбөг шидэх үед хуруунууд нүхнээс саадгүй сугарч байгааг шалгах хэрэгтэй. Хэт бариу байж болохгүй.
+                  Бөмбөгний нүх хоорондын зай хэт хол байх ёсгүй ба хурууны 2-р үе хүртэл нүх рүү хийх буюу гараа хэт сунгахгүйгээр атгана. Ингэхдээ шидэлдийн өмнөх swing хийх үед гарнаас бөмбөг мултрахааргүй хүчээр атгах шаардлагатай.
+                  <br>
+                  3. Өнгө 🎨<br>
+                  
+                  Бөмбөгний өнгө нь тоглолтод нөлөөлөхгүй ч боулинг нь оюун санааны төвлөрөл их шаарддаг спорт учраас дуртай өнгөө сонгох нь таны сэтгэл санаанд сайнаар нөлөөлж магадгүй л юм. 😅
+                  <br>
+                  Эцэст нь хэлэхэд өөрт тохирсон бөмбөгөө зөв сонгоод цагийг зугаатай өнгөрүүлэх нь хамгийн чухал гэдгийг санаарай.
+                  <br>
+                  Амжилт 🤞</p>
+                <h4 id="mdo"></h4>
+                <p></p>
+                <h4 id="one"></h4>
+                <p></p>
+                <h4 id="two"></h4>
+                <p></p>
+                <h4 id="three"></h4>
+                <p></p>
+              </div>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <img src="/UBBOWLING/ball.jpg" class="card-img-bottom" alt="card-img-bottom">
+          </div>
+          
+
+
+
+
+
+          
+          
+          
+          <div class="card" style="width: 50%;">
+            <div class="card-body">
+              <div data-bs-spy="scroll"  data-bs-offset="0" tabindex="0" class="scrollspy-example">
+                <h4 >Боулингийн оноо хэрхэн тооцогддог вэ?</h4>
+                <p>
+
+                  Боулинг бол хамгийн их гахай унагаж их оноо авсан нь хожих өндөр онооны системтэй спорт. Боулингийн төвүүд таны оноог автоматаар бодож өгөх боловч оноогоо хэрхэн тооцогдож байгааг мэдэхгүй хүмүүс олон байдаг.
+<br>
+1 тоглолт нь бүх гахайг унагаах тус бүр 2 боломжтой (шидэлттэй) нийт 10-н frame-ээс бүрдэнэ. Унагасан гахай бүр 1 оноогоор тооцогдох ба Strike болон Spare хийснээр нэмэлт оноо авах боломжтой.
+<br>
+Open frame: <br>
+Та 1 фрэймийн 2 шидэлтээр 10 гахай унагаж чадаагүй бол “Open frame” гэж нэрлэнэ. Зөвхөн унагасан гахайны тоогоор оноо авна.
+<br>
+Spare: <br>
+Spare гэдэг нь та эхний оролдлого хийхдээ бүх гахайг унагаж чадаагүй ч хоёр дахь оролдлогоороо үлдсэн бүх гахайг унагаахыг хэлнэ. Spare-ийг "/" тэмдэгтээр тэмдэглэдэг.
+<br>
+Strike: <br>
+Эхний шидэлтээр 10 гахайг бүгдийг унагаах. Онооны самбарт “Х” тэмдгээр илэрхийлнэ. 2 дараалласан Strike-ийг “Double strike”, 3 дараалласан Strike-ийг “Turkey” гэж нэрлэдэг.
+<br>
+Нэмэлт оноо 👏 <br>
+
+Spare: <br>
+Spare хийхэд 10 оноо ба түүн дээр дараагийн фрэймийн эхний шидэлтээр унагасан гахайны тоо нэмэлт оноо болон бодогдоно.
+<br>
+Strike: <br>
+Strike хийхэд 10 оноо ба түүн дээр дараагийн фрэймийн унагасан бүх гахайны тоо нэмэлт оноо болон бодогдоно.
+<br>
+Double strike: <br>
+1-р фрэйм - 20 оноо + 3-р фрэйм дэх таны унагаасан гахайн тоо <br>
+2-р фрэйм - strike оноотой адил<br>
+Turkey: <br>
+1-р фрэйм - 30 оноо <br>
+2-р фрэйм - double strike оноотой адил <br>
+3-р фрэйм - strike оноотой адил <br>
+
+10-р фрэймийн эхний шидэлтээр strike хийвэл бонус 2 шидэлт, эхний 2 шидэлтээр spare хийвэл бонус 1 шидэлт гүйцэтгэх боломжтой. <br>
+Бүх фрэйм дээр Strike хийвэл 300 оноо авах боломжтой. <br>
+
+Боулингийн онооны дүрмийг уншаад ойлгоход хэцүү мэт санагдах боловч ирж тоглонгоо оноогоо тооцоолоод үзээрэй, бодсоноос хамаагүй хялбар шүү.</p>
+                <h4 id="mdo"></h4>
+                <p></p>
+                <h4 id="one"></h4>
+                <p></p>
+                <h4 id="two"></h4>
+                <p></p>
+                <h4 id="three"></h4>
+                <p></p>
+              </div>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <img src="/UBBOWLING/score.jpg" class="card-img-bottom" alt="card-img-bottom">
+          </div>
+          
+          
+        </div>
+        
+        <div   style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+           <h1><u>Ажлын цаг болон хаяг</u></h1>
+          </div>
+         
+         
+          <div style="display: flex; flex-direction: column;">  
+            
+            <div style="display: flex; flex-direction: row;">
+
+            <div style="margin-left: 15%;">
+            <h3>Цагийн хуваарь:</h3>
+            <h5> <strong>UB Bowling Entertainment Bar:</strong>  <br>
+              Бүх өдрүүдэд 13:00-24:00 хүртэл
+              <br>
+              <br>
+              <br>
+              <strong ">UB Kids Bowling center:</strong>  <br>
+              Бүх өдрүүдэд 11:00-21:00 цаг хүртэл ажиллана </h5>
+            </div>
+
+            <div style="margin-left: 10%;">
+              <h3>Хаяг:</h3>
+              <h5> <strong>UB Bowling Entertainment Bar:</strong>  <br>
+                Хан-Уул дүүрэг, Их наяд Зүүн өндөр барилгын <br> 2 давхарт байрлаж байна.
+                <br>
+                <br>
+
+                <strong>UB Kids Bowling center:</strong>  <br>
+                ХУД, Зайсан Хилл 5 давхарт байрлаж байна. </h5>
+              </div>
+          </div>  
+          <button class="btn btn-primary px-4 fs-5" id="booking-butt" >Захиалга өгөх</button>
+          
+          
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.5060740919675!2d106.92742441173685!3d47.907244571098936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d9693834c0c967d%3A0x14646ddbc76f1316!2sUB%20Bowling!5e0!3m2!1smn!2smn!4v1701683698966!5m2!1smn!2smn" width="100%" height="150" 
+            style="border:0; margin-right: 10%; ;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+
+        </div>
+        
+        
+        
+      
+      
+      
+      <!-- bowling -->
+
+
+
+
+
+        <div class="tab-pane fade " id="bowling" role="tabpanel" aria-labelledby="bowling-tab">
+          
+          
+          
+          
+          <div id="carouselWithIndicators" class="carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/UBBOWLING/bowling0.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img src="/UBBOWLING/chala.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="/UBBOWLING/chalaaa.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselWithIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselWithIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      
+      
+      <div class=" align-items-center ">
+       <h1>UB Bowling Entertainment Bar:</h1>
+       <h4>🎳Боулинг
+        Ажлын өдрүүд: <br>
+        13:00-17:00 цагийн хооронд 1 тоглолт - 15K <br>
+        17:00-24:00 цагийн хооронд 1 тоглолт - 20K <br>
+        Амралтын өдрүүд: <br>
+        13:00-24:00 цагийн хооронд 1 тоглолт - 20K</h4>
+      </div>
+      <button class="btn btn-primary px-4 fs-5" style="width: 100%; margin-top: 2%;" id="booking-b" >Захиалга өгөх</button>
+      
+      
+      </div>
+       
+       
+
+
+
+
+
+
+<!-- other -->
+
+       
+       
+       
+        <div class="tab-pane fade text-* " id="other" role="tabpanel" aria-labelledby="other-tab">
+          
+
+
+
+
+
+          <div id="carouselWithIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/UBBOWLING/lounge.jpg" class="d-block w-100" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="/UBBOWLING/darts.jpg" class="d-block w-100" alt="Slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="/UBBOWLING/soccer.jpg" class="d-block w-100" alt="Slide 3">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselWithIndicators" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselWithIndicators" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+
+
+          
+          <div class=" align-items-center ">
+            <h1>🎯Дартс:</h1>
+            <h4>
+              13:00-24:00 цагийн хооронд 1 цагийн - 10K </h4>
+
+            <h1>⚽️Ширээний хөлбөмбөг</h1>
+            <h4>
+              13:00-24:00 цагийн хооронд 1 цагийн - 10K</h4>
+
+           </div>
+
+
+           <div>
+            <img src="/UBBOWLING/menu.jpg" alt="menu" style="width: 100%;">
+           </div>
+           <button class="btn btn-primary px-4 fs-5" style="width: 100%; margin-top: 2%;" id="booking-bu" >Захиалга өгөх</button>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="tab-pane fade " id="contact" role="tabpanel" aria-labelledby="contact-tab">
+           <div class="container">
+            <h1>UB Bowling Entertainment Bar:</h1>
+              <br>
+             <h2> -Захиалгыг зөвхөн утсаар авч байгаа ба 13:00-24:00 цагийн хооронд ☎️ <a href="tel:77079494" ><strong>
+              👉77079494👈
+            </strong></a> дугаараар холбогдож захиалгаа өгөөрэй.</h2>
+              <br> <br>
+              
+             <h1>UB Kids bowling center:</h1>  <br> 
+              <h2>-Хүүхдийн боулингд захиалах шаардлагагүй тул шууд очоод тоглоорой 👌</h2>
+            
+
+           </div>
+           <div style="display: flex; flex-direction: column; justify-content:center ; align-items: center;"><a href="tel:77079494" style="font-size: 250%;">👉Залгах👈</a></div>
+      </div>
+      </div>
+    </div>
+  </div>
+    
+    
+    
+  
+    
+    
+    
+    <div class="container"><div class="d-flex"><a href="https://www.facebook.com/UBbowlingbar"><img src="/UBBOWLING/facd.jpg" alt="" style="height: 6vh;"></a> <a href="https://www.instagram.com/ub_bowling?fbclid=IwAR0QbYju3QgW8199lJorIezKcHlDC-sBhiB7oFh8v-0gfy9sqjISuavSNcM"><img src="/UBBOWLING/insd.jpg" alt="" style="height: 6vh;"></a> <hr style="width: 100%;"> <img src="/UBBOWLING/logo.jpg" alt="" style="height: 6vh;"></div></div>
+    
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Mobile -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container d-block d-xl-none"  >
+    
+      <div class="card">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="home-tabmob" data-bs-toggle="tab" href="#homemob" role="tab" aria-controls="homemob" aria-selected="true" ><img src="/UBBOWLING/logo.jpg" style="height: 4vh;" alt=""></a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="bowling-tabmob" data-bs-toggle="tab" href="#bowlingmob" role="tab" aria-controls="bowlingmob" aria-selected="false" style="font-family:Arial, Helvetica, sans-serif; font-size: 90%; color: black;">Bowling</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " id="other-tabmob" data-bs-toggle="tab" href="#othermob" role="tab" aria-controls="othermob"  aria-selected="false" style="font-family:Arial, Helvetica, sans-serif; font-size: 90%; color: black;">Бусад Үйлчилгээ</a>
+              </li>
+             
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="contact-tabmob" data-bs-toggle="tab" href="#contactmob" role="tab" aria-controls="contactmob" aria-selected="false" style="font-family:Arial, Helvetica, sans-serif; font-size: 90%; color: black;">Захиалга өгөх</a>
+            </li>
+            </ul>
+          </div>
+          
+          
+          
+          
+          <div class="card-body container" >
+            <div class="tab-content" id="myTabContent">
+              
+              
+              
+              
+              <div class="tab-pane fade show active" id="homemob" role="tabpanel" aria-labelledby="home-tabmob">
+               
+               
+               
+                <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+              
+                  <div class="carousel-inner">
+                    <div class="carousel-item active c-item">
+                      <img src="/UBBOWLING/backgroundbowling.jpg" class="d-block w-100 c-img" alt="Slide 1">
+                      <div class="carousel-caption top-1 mt-4">
+                        <button class="btn btn-primary " id="booking-button1">Захиалга өгөх</button>
+                      </div>
+                    </div>
+                    <div class="carousel-item c-item">
+                      <img src="/UBBOWLING/bowling.jpg" class="d-block w-100 c-img" alt="Slide 2">
+                      <div class="carousel-caption top-1 mt-4">
+                        <button  id="booking" class="btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#booking-modal">Захиалга өгөх</button>
+                      </div>
+                    </div>
+                    <div class="carousel-item c-item">
+                      <img src="/UBBOWLING/bowlinglounge1.jpg" class="d-block w-100 c-img" alt="Slide 3">
+                      <div class="carousel-caption top-1 mt-4">
+                        
+                        <button class="btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#booking-modal" id="booking-button2">Захиалга өгөх</button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+             
+     
+      
+      
+                <div class="d-flex flex-column" style="height: 30%; margin-top: 20%;">
+                <div class="card" style="width: 100%;">
+                  <div class="card-body">
+                    <h5 class="card-title">GIFT CARD - Эрхийн бичиг 🎊</h5>
+                    <p class="card-text">Төрсөн өдөр болон хамт олны тэмцээн уралдааны шагнал зэрэгт тохирох бэлгийн карт гарч байгаа шүү.
+      
+                     Facebook чатаар холбогдоод ямар ч үнийн дүнгээр авах боломжтой.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                  <img src="/UBBOWLING/giftcard.jpg" class="card-img-bottom" alt="card-img-bottom">
+                </div>
+
+
+                
+                
+                
+                
+                <div class="card" style="width: 100%;">
+                  <div class="card-body">
+                    <div data-bs-spy="scroll"  data-bs-offset="0" tabindex="0" class="scrollspy-example">
+                      <h4 >Боулингийн гутал</h4>
+                      <p>
+      
+                        Боулинг тоглоход заавал зориулалтын гутал өмсөх шаардлагатай байдаг. Энэ таны болоод хамт тоглож буй хүмүүсийн аюулгүй байдалтай шууд хамааралтай. <br>
+                        
+                        Боулингийн гутал нь шидэлтийн свинг, техникт тохирсон хийцлэлтэй байдаг. Гутлын ул нь урд хэсэгтээ гулгах зориулалттай гөлгөр арьсаар хийгдсэн байдаг бол өсгий хэсэг нь хурдыг бууруулах зориулалттай резин байдаг. Энэ нь тоглогчийн аюулгүй байдал цаашлаад талбайн шалыг хамагаалахад ч тустай. Бидний өмсдөг энгийн гутал нь зууралт ихтэй тул огцом зогсож энерцээ дийлэхгүй унах, гэмтэх аюултай юм. <br>
+                        
+                        Мэргэжлийн тамирчид гарын байрлал, свингний хурд, өөрийн техникт тохируулан янз бүрийн ултай гутлаас сонголт хийж авдаг. <br>
+                        
+                        Анхаарах: <br>
+                        
+                        1. Боулингийг заавал зориулалтын гуталтай тоглох <br>
+                        2. Шидэлт хийх үед замын тосолгоотой хэсэг рүү хэтэрч гишгэсэн эсвэл шингэн зүйлс дээр гишгэсэн бол заавал цэвэрлэж байж талбай руу дахин гарах. <br>
+                        3. Гадагш гарахдаа гутлаа солих эсвэл улавч өмсөх шаардлагатай. <br>
+                        
+                        Манайх гутлын түрээс тоглолтын үнэд багтсан байдаг ба шинэ оймсоор үйлчилдэг шүү.</p>
+                      <h4 id="mdo"></h4>
+                      <p></p>
+                      <h4 id="one"></h4>
+                      <p></p>
+                      <h4 id="two"></h4>
+                      <p></p>
+                      <h4 id="three"></h4>
+                      <p></p>
+                    </div>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                  <img src="/UBBOWLING/shoes.jpg" class="card-img-bottom" alt="card-img-bottom">
+                </div>
+                
+                
+              </div>
+      
+      
+              <div class="container" style="display: flex;"><img src="/bowl.png" alt="bowling img" style="width: 100%;"></div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+              
+              <div class="d-flex flex-column" style="height: 30%;">
+                
+      
+      
+      
+      
+      
+      
+                <div class="card" style="width: 100%;">
+                  <div class="card-body">
+                    <div data-bs-spy="scroll"  data-bs-offset="0" tabindex="0" class="scrollspy-example">
+                      <h4 >Бөмбөгөө хэрхэн сонгох вэ? 🤔</h4>
+                      <p>
+      
+                        Өөрт тохирсон бөмбөгийг сонгох нь биед эвтэйхэн байхаас гадна хурд, хүч болон гүйцэтгэлийн хяналтыг даруй нэмэгдүүлдэг. Буруу бөмбөг сонгосноор гар ядрах, шөрмөс татах, булчин зангирах цаашлаад нуруунд ч ачаалал өгөх эрсдэлтэй байдаг. Тиймээс хэрхэн өөрт тохирох бөмбөгийг сонгох зөвлөмжийг хүргэж байна.
+      <br>
+                        1. Жин чухал уу? 🏋️<br>
+                        
+                        Боулингийн бөмбөг нь жингээсээ хамааран дугаартай байдаг ба уг дугаар тухайн бөмбөгийн жинг "паунд" нэгжээр илэрхийлсэн байдаг. Боулингийн төвүүд ихэвчлэн 6 (2.7кг)-16 (7.3кг) паундын сонирхогчийн бөмбөгөөр үйлчилдэг ба бөмбөгний нүх нь хүн болгоны гарт тохирохоор том өрөмдсөн байдаг. Монголчуудын хувьд насанд хүрсэн эмэгтэйчүүд ихэвчлэн 7-10, эрэгтэйчүүд 10-13 паундын бөмбөгөөр шиддэг.
+                        <br>
+                        6 lb - 2.72 kg<br>
+                        7 lb - 3.17 kg<br>
+                        8 lb - 3.62 kg<br>
+                        9 lb - 4.08 kg<br>
+                        10 lb - 4.5 kg<br>
+                        11 lb - 4.98 kg<br>
+                        12 lb - 5.44 kg<br>
+                        13 lb - 5.89 kg<br>
+                        14 lb - 6.35 kg<br>
+                        15 lb - 6.8 kg<br>
+                        
+                        Стандартаар бол өөрийн биеийн жингийн 10%-тай тэнцэх бөмбөгөөр тоглохыг санал болгодог. Хэрвээ та бэртэл гэмтэлтэй эсвэл үнэхээр дийлэхгүй хүнд санагдаж байвал заавал дээрх дүрмийг баримтлах шаардлагагүй. Гол нь таны биед эвтэйхэн бөгөөд хяналттай байх нь чухал.
+                        <br>
+                        Хөнгөн бөмбөгөөр шидэх нь хурдтай, хүчтэй боловч хяналт муудах, биеийн тэнцвэр алдах зэрэг эрсдлүүдтэй.
+                        Хүнд бөмбөгөөр хүчтэй шидэх нь мэдээж олон гахай унагаах магадлал өндөр боловч өөрт тохирсон жинтэй бөмбөгөөр ядрахгүй, ачаалал багатай, тогтмол жигд гүйцэтгэлтэй шидэх нь таны оноог нэмэгдүүлэхэд тустай.
+                        <br>
+                        2. Нүхний хэмжээ 🌚<br>
+                        
+                        Стандарт боулингийн бөмбөг эрхий, дунд, ядам хуруунд зориулсан 3 нүхтэй байдаг. Мэргэжлийн тамирчид өөрсдийн гарт тохируулан бөмбөгөө нүхэлж авдаг бол сонирхогчийн буюу заалны бөмбөг нь ямар ч хүн тоглоход тохиромжтой нүхтэй байдаг.
+                        <br>
+                        Заалны бөмбөгийг сонгохдоо юуны түрүүнд бөмбөг шидэх үед хуруунууд нүхнээс саадгүй сугарч байгааг шалгах хэрэгтэй. Хэт бариу байж болохгүй.
+                        Бөмбөгний нүх хоорондын зай хэт хол байх ёсгүй ба хурууны 2-р үе хүртэл нүх рүү хийх буюу гараа хэт сунгахгүйгээр атгана. Ингэхдээ шидэлдийн өмнөх swing хийх үед гарнаас бөмбөг мултрахааргүй хүчээр атгах шаардлагатай.
+                        <br>
+                        3. Өнгө 🎨<br>
+                        
+                        Бөмбөгний өнгө нь тоглолтод нөлөөлөхгүй ч боулинг нь оюун санааны төвлөрөл их шаарддаг спорт учраас дуртай өнгөө сонгох нь таны сэтгэл санаанд сайнаар нөлөөлж магадгүй л юм. 😅
+                        <br>
+                        Эцэст нь хэлэхэд өөрт тохирсон бөмбөгөө зөв сонгоод цагийг зугаатай өнгөрүүлэх нь хамгийн чухал гэдгийг санаарай.
+                        <br>
+                        Амжилт 🤞</p>
+                      <h4 id="mdo"></h4>
+                      <p></p>
+                      <h4 id="one"></h4>
+                      <p></p>
+                      <h4 id="two"></h4>
+                      <p></p>
+                      <h4 id="three"></h4>
+                      <p></p>
+                    </div>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                  <img src="/UBBOWLING/ball.jpg" class="card-img-bottom" alt="card-img-bottom">
+                </div>
+                
+      
+      
+      
+      
+      
+                
+                
+                
+                <div class="card" style="width: 100%;">
+                  <div class="card-body">
+                    <div data-bs-spy="scroll"  data-bs-offset="0" tabindex="0" class="scrollspy-example">
+                      <h4 >Боулингийн оноо хэрхэн тооцогддог вэ?</h4>
+                      <p>
+      
+                        Боулинг бол хамгийн их гахай унагаж их оноо авсан нь хожих өндөр онооны системтэй спорт. Боулингийн төвүүд таны оноог автоматаар бодож өгөх боловч оноогоо хэрхэн тооцогдож байгааг мэдэхгүй хүмүүс олон байдаг.
+      <br>
+      1 тоглолт нь бүх гахайг унагаах тус бүр 2 боломжтой (шидэлттэй) нийт 10-н frame-ээс бүрдэнэ. Унагасан гахай бүр 1 оноогоор тооцогдох ба Strike болон Spare хийснээр нэмэлт оноо авах боломжтой.
+      <br>
+      Open frame: <br>
+      Та 1 фрэймийн 2 шидэлтээр 10 гахай унагаж чадаагүй бол “Open frame” гэж нэрлэнэ. Зөвхөн унагасан гахайны тоогоор оноо авна.
+      <br>
+      Spare: <br>
+      Spare гэдэг нь та эхний оролдлого хийхдээ бүх гахайг унагаж чадаагүй ч хоёр дахь оролдлогоороо үлдсэн бүх гахайг унагаахыг хэлнэ. Spare-ийг "/" тэмдэгтээр тэмдэглэдэг.
+      <br>
+      Strike: <br>
+      Эхний шидэлтээр 10 гахайг бүгдийг унагаах. Онооны самбарт “Х” тэмдгээр илэрхийлнэ. 2 дараалласан Strike-ийг “Double strike”, 3 дараалласан Strike-ийг “Turkey” гэж нэрлэдэг.
+      <br>
+      Нэмэлт оноо 👏 <br>
+      
+      Spare: <br>
+      Spare хийхэд 10 оноо ба түүн дээр дараагийн фрэймийн эхний шидэлтээр унагасан гахайны тоо нэмэлт оноо болон бодогдоно.
+      <br>
+      Strike: <br>
+      Strike хийхэд 10 оноо ба түүн дээр дараагийн фрэймийн унагасан бүх гахайны тоо нэмэлт оноо болон бодогдоно.
+      <br>
+      Double strike: <br>
+      1-р фрэйм - 20 оноо + 3-р фрэйм дэх таны унагаасан гахайн тоо <br>
+      2-р фрэйм - strike оноотой адил<br>
+      Turkey: <br>
+      1-р фрэйм - 30 оноо <br>
+      2-р фрэйм - double strike оноотой адил <br>
+      3-р фрэйм - strike оноотой адил <br>
+      
+      10-р фрэймийн эхний шидэлтээр strike хийвэл бонус 2 шидэлт, эхний 2 шидэлтээр spare хийвэл бонус 1 шидэлт гүйцэтгэх боломжтой. <br>
+      Бүх фрэйм дээр Strike хийвэл 300 оноо авах боломжтой. <br>
+      
+      Боулингийн онооны дүрмийг уншаад ойлгоход хэцүү мэт санагдах боловч ирж тоглонгоо оноогоо тооцоолоод үзээрэй, бодсоноос хамаагүй хялбар шүү.</p>
+                      <h4 id="mdo"></h4>
+                      <p></p>
+                      <h4 id="one"></h4>
+                      <p></p>
+                      <h4 id="two"></h4>
+                      <p></p>
+                      <h4 id="three"></h4>
+                      <p></p>
+                    </div>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                  <img src="/UBBOWLING/score.jpg" class="card-img-bottom" alt="card-img-bottom">
+                </div>
+                
+                
+              </div>
+              
+              <div   style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                 <h5><u>Ажлын цаг болон хаяг</u></h5>
+                </div>
+               
+               
+                <div style="display: flex; flex-direction: column;">  
+                  
+                  <div style="display: flex; flex-direction: row;">
+      
+                  <div style="margin-left: 5%;">
+                  <h5>Цагийн хуваарь:</h5>
+                  <p> <strong>UB Bowling Entertainment Bar:</strong>  <br>
+                    Бүх өдрүүдэд 13:00-24:00 хүртэл
+                    <br>
+                    <br>
+                    <br>
+                    <strong ">UB Kids Bowling center:</strong>  <br>
+                    Бүх өдрүүдэд 11:00-21:00 цаг хүртэл ажиллана </p>
+                  </div>
+      
+                  <div style="margin-left: 10%;">
+                    <h5>Хаяг:</h5>
+                    <p> <strong>UB Bowling Entertainment Bar:</strong>  <br>
+                      Хан-Уул дүүрэг, Их наяд Зүүн өндөр барилгын <br> 2 давхарт байрлаж байна.
+                      <br>
+                      <br>
+      
+                      <strong>UB Kids Bowling center:</strong>  <br>
+                      ХУД, Зайсан Хилл 5 давхарт байрлаж байна. </p>
+                    </div>
+                </div>  
+                <button class="btn btn-primary px-4 fs-5" id="booking-button3" >Захиалга өгөх</button>
+                
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.5060740919675!2d106.92742441173685!3d47.907244571098936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d9693834c0c967d%3A0x14646ddbc76f1316!2sUB%20Bowling!5e0!3m2!1smn!2smn!4v1701683698966!5m2!1smn!2smn" width="100%" height="150" 
+                  style="border:0; margin-right: 10%; ;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+      
+      
+              </div>
+              
+              
+              
+            
+            
+            
+            <!-- bowling -->
+      
+      
+      
+      
+      
+              <div class="tab-pane fade " id="bowlingmob" role="tabpanel" aria-labelledby="bowling-tabmob">
+                
+                
+                
+                
+                <div id="carouselWithIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/UBBOWLING/bowling0.jpg" class="d-block w-100" alt="Slide 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/UBBOWLING/chala.jpg" class="d-block w-100" alt="Slide 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/UBBOWLING/chalaaa.jpg" class="d-block w-100" alt="Slide 3">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselWithIndicators" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselWithIndicators" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>
+            
+            
+            <div class=" align-items-center ">
+             <h1>UB Bowling Entertainment Bar:</h1>
+             <h4>🎳Боулинг
+              Ажлын өдрүүд: <br>
+              13:00-17:00 цагийн хооронд 1 тоглолт - 15K <br>
+              17:00-24:00 цагийн хооронд 1 тоглолт - 20K <br>
+              Амралтын өдрүүд: <br>
+              13:00-24:00 цагийн хооронд 1 тоглолт - 20K</h4>
+            </div>
+            <button class="btn btn-primary px-4 fs-5" style="width: 100%; margin-top: 2%;" id="booking-button4" >Захиалга өгөх</button>
+            
+            
+            </div>
+             
+             
+      
+      
+      
+      
+      
+      
+      <!-- other -->
+      
+             
+             
+             
+              <div class="tab-pane fade text-* " id="othermob" role="tabpanel" aria-labelledby="other-tabmob">
+                
+      
+      
+      
+      
+      
+                <div id="carouselWithIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="/UBBOWLING/lounge.jpg" class="d-block w-100" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/UBBOWLING/darts.jpg" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/UBBOWLING/soccer.jpg" class="d-block w-100" alt="Slide 3">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselWithIndicators" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselWithIndicators" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+      
+      
+                
+                <div class=" align-items-center ">
+                  <h1>🎯Дартс:</h1>
+                  <h4>
+                    13:00-24:00 цагийн хооронд 1 цагийн - 10K </h4>
+      
+                  <h1>⚽️Ширээний хөлбөмбөг</h1>
+                  <h4>
+                    13:00-24:00 цагийн хооронд 1 цагийн - 10K</h4>
+      
+                 </div>
+      
+      
+                 <div>
+                  <img src="/UBBOWLING/menu.jpg" alt="menu" style="width: 100%;">
+                 </div>
+                 <button class="btn btn-primary px-4 fs-5" style="width: 100%; margin-top: 2%;" id="booking-button5" >Захиалга өгөх</button>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+              </div>
+              
+              
+              
+              
+              
+              
+              <div class="tab-pane fade " id="contactmob" role="tabpanel" aria-labelledby="contact-tabmob">
+                 <div class="container">
+                  <h1>UB Bowling Entertainment Bar:</h1>
+                    <br>
+                   <h2> -Захиалгыг зөвхөн утсаар авч байгаа ба 13:00-24:00 цагийн хооронд ☎️ <a href="tel:77079494" ><strong>
+                    👉77079494👈
+                  </strong></a> дугаараар холбогдож захиалгаа өгөөрэй.</h2>
+                    <br> <br>
+                    
+                   <h1>UB Kids bowling center:</h1>  <br> 
+                    <h2>-Хүүхдийн боулингд захиалах шаардлагагүй тул шууд очоод тоглоорой 👌</h2>
+                  
+      
+                 </div>
+                 <div style="display: flex; flex-direction: column; justify-content:center ; align-items: center;"><a href="tel:77079494" style="font-size: 250%;">👉Залгах👈</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+          
+          
+          
+        
+          
+          
+          
+          <div class="container"><div class="d-flex"><a href="https://www.facebook.com/UBbowlingbar"><img src="/UBBOWLING/facd.jpg" alt="" style="height: 6vh;"></a> <a href="https://www.instagram.com/ub_bowling?fbclid=IwAR0QbYju3QgW8199lJorIezKcHlDC-sBhiB7oFh8v-0gfy9sqjISuavSNcM"><img src="/UBBOWLING/insd.jpg" alt="" style="height: 6vh;"></a> <hr style="width: 100%;"> <img src="/UBBOWLING/logo.jpg" alt="" style="height: 6vh;"></div></div>
+          
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <script>
+
+            document.getElementById('booking-button3').addEventListener('click', function() {
+              
+              document.getElementById('contact-tabmob').click();
+            });
+          </script>
+ <script>
+
+  document.getElementById('booking-button4').addEventListener('click', function() {
+    
+    document.getElementById('contact-tabmob').click();
+  });
+</script>
+<script>
+
+  document.getElementById('booking-button5').addEventListener('click', function() {
+    
+    document.getElementById('contact-tabmob').click();
+  });
+</script>
+
+
+
+          <script>
+
+            document.getElementById('booking-button2').addEventListener('click', function() {
+              
+              document.getElementById('contact-tabmob').click();
+            });
+          </script>
+
+
+          <script>
+
+            document.getElementById('booking-button1').addEventListener('click', function() {
+              
+              document.getElementById('contact-tabmob').click();
+            });
+          </script>
+
+   <script>
+
+  document.getElementById('booking-button').addEventListener('click', function() {
+    
+    document.getElementById('contact-tab').click();
+  });
+</script>
+<script>
+
+  document.getElementById('booking-but').addEventListener('click', function() {
+    
+    document.getElementById('contact-tab').click();
+  });
+</script>
+<script>
+
+  document.getElementById('booking').addEventListener('click', function() {
+    
+    document.getElementById('contact-tab').click();
+  });
+</script>
+<script>
+
+  document.getElementById('booking-butt').addEventListener('click', function() {
+    
+    document.getElementById('contact-tab').click();
+  });
+</script>
+<script>
+
+  document.getElementById('booking-bu').addEventListener('click', function() {
+    
+    document.getElementById('contact-tab').click();
+  });
+</script>
+<script>
+
+  document.getElementById('booking-b').addEventListener('click', function() {
+    
+    document.getElementById('contact-tab').click();
+  });
+</script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
